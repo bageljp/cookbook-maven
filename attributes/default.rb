@@ -1,0 +1,8 @@
+default['maven']['version']['major'] = "3"
+default['maven']['version']['minor'] = "2.1"
+default['maven']['root_dir'] = "/usr/local"
+default['maven']['dir'] = "apache-maven-#{node['maven']['version']['major']}.#{node['maven']['version']['minor']}"
+default['maven']['source']['file'] = "#{node['maven']['dir']}-bin.tar.gz"
+default['maven']['source']['url'] = "http://ftp.tsukuba.wide.ad.jp/software/apache/maven/maven-#{node['maven']['version']['major']}/#{node['maven']['version']['major']}.#{node['maven']['version']['minor']}/binaries/#{node['maven']['source']['file']}"
+default['maven']['user'] = "root"
+default['maven']['group'] = "root"
